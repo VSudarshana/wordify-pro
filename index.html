@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordify Pro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(img/Wordify-pro.png);
+            background-position: center;
+        }
+
+
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: .5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+
+        .bg3 {
+            animation-duration: 5s;
+        }
+
+
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(25%);
+            }
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: #333;
+            color: #fff;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 20);
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #cca113;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <nav>
+        <h1> Wordify Pro</h1>
+        <ul>
+            <li><a href="dict.html">Dictionary</a></li>
+            <li><a href="langtrans.html">Translator</a></li>
+            <li><a href="word.html">Word Of The Day</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Wordify Pro!</h2>
+        <p>Wordify Pro is a web product that discovers the power of words with our innovative dictionary app,
+            meticulously
+            crafted using HTML, CSS, and JavaScript. Unleash the potential of language with features that go beyond
+            definitions:
+
+        <ul>
+            <li>Search Word: Effortlessly explore the meanings, pronunciations, and usage of any word. Our intuitive
+                interface makes finding definitions a breeze.</li><br>
+
+            <li>Language Translator: Seamlessly bridge language barriers with our built-in translator. Translate words,
+                phrases, and sentences between multiple languages, opening up a world of communication possibilities.
+            </li><br>
+
+            <li>Word of the Day: Enrich your vocabulary daily with our 'Word of the Day' feature. Learn a new word,
+                explore
+                its nuances, and impress others with your expanding lexicon.</li>
+        </ul>
+
+        <p>Experience language like never before, with a sleek and user-friendly design that ensures quick access to
+            information. Whether you're a student, professional, or language enthusiast, our app is your ultimate
+            companion for words and beyond.</p>
+
+        <p>The best part? Wordify Pro comes with an amazing background and
+            amazing CSS animations that will make your language learning
+            journey even more enjoyable. So what are you waiting for? Start
+            exploring Wordify Pro today and take your language skills to the
+            next level!</p>
+
+        <p>Don't forget to check out our <span class="highlight">Dictionary</span>
+            , <span class="highlight">Translator</span> and <span class="highlight">Word Of The Day</span> pages for
+            more information.</p>
+    </div>
+    <footer>
+
+        <p>&copy; 2023 Wordify Pro made by <a href="https://instagram.com/im_biker_girl?igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank">Sudarshana</a></p>
+    </footer>
+</body>
+
+</html>
